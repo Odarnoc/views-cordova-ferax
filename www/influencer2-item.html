@@ -14,8 +14,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#F4F4F4">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Our Custom CSS -->
@@ -112,6 +113,19 @@
 
             </div>
 
+            <div class="row">
+                <div class="col-md-7 col-7">
+                    <div>
+                      <span style="color: #dfc979;" id="rateMe2"  class="empty-stars"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-5">
+                    <p id="p-premium" class="t3">Plus</p>
+                </div>
+
+            </div>
+
             <div class="row row-numbers-influencer">
                 <div class="col-md-6 col-6">
                     <div class="clearfix d-numbers-influencer">
@@ -179,6 +193,7 @@
                         </div>
 
                     </div>
+                    <button onclick="tarifas()" type="submit" class="btn btn-form-home">Contrato</button>
 
                 </div>
             </div>
@@ -194,25 +209,26 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
-        </script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
-        </script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
         </script>
+    <script src="js/addons/rating.js"></script>
 
 
     <script type="text/javascript">
         $(document).ready(function () {
+            $(document).ready(function() {
+              $('#rateMe2').mdbRate();
+            });
+
             $("#sidebar").mCustomScrollbar({
                 theme: "minimal"
             });
@@ -229,6 +245,11 @@
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
             });
         });
+
+        function tarifas () {
+            console.log("tarifas");
+            location.href = 'tarifas.html';
+        }
     </script>
 
 </body>
