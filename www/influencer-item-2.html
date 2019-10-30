@@ -36,7 +36,7 @@
 
 </head>
 
-<body class="body-influencer2-item overlay-influencer-item" style="background-color: blueviolet;">
+<body class="body-influencer-item-2 overlay-influencer-item" style="background-color: blueviolet;">
 
     <div class="navbar-bottom">
         <a href="inicio.html"><img src="images/icon-home.png" alt="" /></a>
@@ -61,22 +61,28 @@
 
             <ul class="list-unstyled components">
                 <li>
-                    <a href="mi-perfil.html">Perfil</a>
+                  <a href="mi-perfil.html">Profile</a>
                 </li>
                 <!--<li class="active">
-                <a href="inicio.html">Inicio</a>
-              </li>-->
+                  <a href="inicio.html">Inicio</a>
+                </li>-->
                 <li>
-                    <a class="mensajes-sidebar" href="mensajes.html">Mensajes <b>2</b></a>
+                  <a class="mensajes-sidebar" href="mensajes.html">Messages <b>2</b></a>
                 </li>
                 <li>
-                    <a class="mensajes-sidebar" href="./calendario/calendario.html">Proyectos</a>
+                  <a class="mensajes-sidebar" href="./calendario/calendario.html">Projects</a>
                 </li>
                 <!--<li>
-                <a href="#">Explorar</a>
-              </li>-->
+                  <a href="#">Explorar</a>
+                </li>-->
                 <li>
-                    <a href="index.html">Cerrar sesion</a>
+                  <a href="#">Save</a>
+                </li>
+                <li>
+                  <a href="#">Configure</a>
+                </li>
+                <li>
+                  <a href="index.html">Log out</a>
                 </li>
             </ul>
             <!--
@@ -104,7 +110,7 @@
 
             <div class="row row-title-influencer">
                 <div class="col-md-6 col-6">
-                    <p class="t1">Camila Lara</p>
+                    <p class="t1">Nika Acosta</p>
                 </div>
 
                 <div class="col-md-6 col-6">
@@ -131,7 +137,7 @@
                     <div class="clearfix d-numbers-influencer">
                         <img src="images/icon-seguidores-white.png" alt="">
                         <p class="t1">1.9 M</p>
-                        <p class="t2">Seguidores</p>
+                        <p class="t2">Followers</p>
                     </div>
 
                 </div>
@@ -147,57 +153,35 @@
 
             </div>
 
-            <div class="row row-cards" style="padding-bottom: 50px; margin-bottom: 20px;">
-                <div class="col-md-12 col-12">
-                    <div class="scrolling-wrapper">
-                        <div class="card-item-influencer col-9">
-                            <p class="t1">Seguidores</p>
-                            <p class="t2"> 29,999</p>
-                            <p class="t3">Crecimiento estimado después de la publicación del <b>video promocional</b>
-                                con un enlace a su cuenta.</p>
-                        </div>
-
-                        <div class="card-item-influencer col-9">
-                            <p class="t1">Ventas</p>
-                            <p class="t2"> 9,999</p>
-                            <p class="t3">Crecimiento estimado después de la publicación del <b>video promocional</b>
-                                con un enlace a su cuenta.</p>
-                        </div>
-
-                        <div class="card-item-influencer col-9">
-                            <p class="t1">Seguidores</p>
-                            <p class="t2"> 29,999</p>
-                            <p class="t3">Crecimiento estimado después de la publicación del <b>video promocional</b>
-                                con un enlace a su cuenta.</p>
-                        </div>
-
-                        <div class="card-item-influencer col-9">
-                            <p class="t1">Ventas</p>
-                            <p class="t2"> 9,999</p>
-                            <p class="t3">Crecimiento estimado después de la publicación del <b>video promocional</b>
-                                con un enlace a su cuenta.</p>
-                        </div>
-
-                        <div class="card-item-influencer col-9">
-                            <p class="t1">Seguidores</p>
-                            <p class="t2"> 29,999</p>
-                            <p class="t3">Crecimiento estimado después de la publicación del <b>video promocional</b>
-                                con un enlace a su cuenta.</p>
-                        </div>
-
-                        <div class="card-item-influencer col-9">
-                            <p class="t1">Ventas</p>
-                            <p class="t2"> 9,999</p>
-                            <p class="t3">Crecimiento estimado después de la publicación del <b>video promocional</b>
-                                con un enlace a su cuenta.</p>
-                        </div>
-
-                    </div>
-                    <button onclick="tarifas()" type="submit" class="btn btn-form-home">Contrato</button>
-
+            <div class="row row-horizontal">
+                <div class="card">
+                    <p class="card-text">The influencer marketing industry is projected to be approximately 10 billion dollars in the</p>
+                    <p class="card-number">2020</p>
                 </div>
+                <div class="card">
+                   <p class="card-number">74%</p>
+                    <p class="card-text">Of people take social networks into account for their purchase decision.</p>
+                </div>
+                <div class="card">
+                   <p class="card-number">70%</p>
+                    <p class="card-text">Young people trust influencers more than celebrities.</p>
+                </div>
+                <div class="card">
+                   <p class="card-number">22%</p>
+                    <p class="card-text">Of young adults said they made at least one purchase following the recommendation of an influencer.</p>
+                </div>
+                <div class="card">
+                    <p class="card-text">Influencers with more than five million followers, represent.</p>
+                    <p class="card-number">1% <b>of the total</b></p>
+                </div>
+                <div class="card">
+                   <p class="card-number">81%</p>
+                    <p class="card-text">Of the influencers have between 15 K and 100K followers.</p>
+                </div>
+            
             </div>
 
+            <button onclick="tarifas()" type="submit" class="btn btn-form-home" style="margin-bottom: 4rem;">Engagement</button>
 
         </div>
     </div>
@@ -248,7 +232,7 @@
 
         function tarifas () {
             console.log("tarifas");
-            location.href = 'tarifas.html';
+            location.href = 'tarifas-2.html';
         }
     </script>
 

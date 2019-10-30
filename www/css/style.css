@@ -483,7 +483,8 @@ body {
     font-size: 18px;
     font-weight: 700;
     margin: 0px;
-    text-align: right;
+    text-align: left;
+    padding-left: 0.5rem;
 }
 
 .row-name-influencer-item .t2 {
@@ -666,6 +667,10 @@ body {
 
 }
 
+.btn-purple-lg:hover {
+    color: white;
+}
+
 .form-pagar label {
     font-size: 16px;
     font-weight: 600;
@@ -682,12 +687,13 @@ body {
     background-color: rgba(0, 0, 0, .05);
     border: none;
     border-radius: 15px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
+    font-family: "Open Sans";
 }
 
 .form-pagar input:active,
@@ -871,19 +877,31 @@ body {
 
 
 .body-influencer-item {
+    background-image: url(../images/influencer-1-v.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -7vh -11vh;
+}
+
+.body-influencer-item-2 {
+    background-image: url(../images/influencer-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -7vh -11vh;
+}
+
+.body-influencer-item-3 {
     background-image: url(../images/influencer-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -7vh -11vh;
-    width: 100%;
 }
 
-.body-influencer2-item {
-    background-image: url(../images/influencer-1.jpg);
+.body-influencer-item-4 {
+    background-image: url(../images/influencer-4-v.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -7vh -11vh;
-    width: 100%;
 }
 
 
@@ -961,7 +979,7 @@ body {
 
 .row-cards {
     padding-top: 20px;
-    
+
 }
 
 .scrolling-wrapper {
@@ -974,7 +992,7 @@ body {
     display: inline-block;
 }
 
-.card-item-influencer{
+.card-item-influencer {
     background-color: white;
     border-radius: 20px;
     border: none;
@@ -983,15 +1001,16 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     margin-right: 20px;
+
 }
 
-.card-item-influencer .t1{
+.card-item-influencer .t1 {
     font-weight: 700;
     font-size: 20px;
     margin: 0px;
 }
 
-.card-item-influencer .t2{
+.card-item-influencer .t2 {
     font-weight: 400;
     font-size: 35px;
     color: #8909E2;
@@ -999,7 +1018,7 @@ body {
     margin: 0px;
 }
 
-.card-item-influencer .t3{
+.card-item-influencer .t3 {
     font-weight: 400;
     font-size: 13px;
     color: black;
@@ -1014,7 +1033,7 @@ body {
 }
 
 
-#content-influencer-item{
+#content-influencer-item {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1025,7 +1044,64 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
 }
 
+
+.form-check-pagar {
+    padding-top: 30px;
+}
+
+.form-check-pagar .form-check-input {
+    margin-top: 8px;
+}
+
+.form-check-label a {
+    color: #007BFF;
+}
+
+.row-horizontal {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 17px;
+    padding-top: 4vh;
+}
+
+.card {
+    /*float: left;*/
+    width: 66%;
+    padding: 25px;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: 66%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: rgba(0,0,0,.6);
+}
+
+.card{
+    border-radius: 15px;
+    border: none;
+}
+
+.card-number{
+    color: #8709E0;
+    font-size: 40px;
+    font-family: "Open Sans";
+    margin-bottom: 0px;
+}
+
+.card-number b{
+    font-size: 16px;
+    font-weight: 600;
+}
 
